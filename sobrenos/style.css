@@ -71,12 +71,11 @@ body {
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #000000;
   color: #fff;
   margin-top: 20px;
 }
 
-/* From Uiverse.io by kamehame-ha */ 
+/* Botão GitHub */
 .button {
   display: flex;
   justify-content: center;
@@ -119,4 +118,66 @@ body {
 .githubs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .about {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .about h2 {
+    font-size: 1.8em;
+  }
+
+  .about h3 {
+    font-size: 1.4em;
+  }
+
+  .button {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .header p {
+    font-size: 0.9em;
+  }
+
+  .about h2 {
+    font-size: 1.5em;
+  }
+
+  .about h3 {
+    font-size: 1.2em;
+  }
+
+  .githubs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+
+  .footer {
+    font-size: 0.9em;
+  }
 }
